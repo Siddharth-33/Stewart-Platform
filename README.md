@@ -25,4 +25,5 @@ The control system involves inverse kinematics, which computes the required angl
 1. Clone the repository:
    
    git clone https://github.com/Siddharth-33/Stewart-Platform.git
+   
    cd Stewart-Platform
