@@ -8,9 +8,21 @@ A 6×6 IR sensor grid is mounted on the top plate to detect the real-time positi
 The control system involves inverse kinematics, which computes the required angles for each pair of servo-driven linkages. These angles are then translated into servo PWM signals, tilting the platform to guide the ball back toward the center.
 
 ## Domains
-Mechanical Design: CAD modeling of the platform base, top plate, and servo linkages.
-Embedded Systems: Using ESP32 microcontroller for IR sensor reading and servo control.
-Control Theory: PID tuning, inverse kinematics for 3-DOF.
-Assembly: Integration of IR sensors, servos, and platform joints.
+1. Mechanical Design: CAD modeling of the platform base, top plate, and servo linkages.
+2. Embedded Systems: Using ESP32 microcontroller for IR sensor reading and servo control.
+3. Control Theory: PID tuning, inverse kinematics for 3-DOF.
+4. Assembly: Integration of IR sensors, servos, and platform joints.
+5. PCB Design
 
 ##  Features
+
+
+
+##  Demo / Visualization
+
+
+### Installation
+1. Clone the repository:
+   
+   git clone https://github.com/Siddharth-33/Stewart-Platform.git
+   cd Stewart-Platform
