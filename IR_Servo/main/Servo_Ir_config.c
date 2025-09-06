@@ -5,7 +5,7 @@
 #include "driver/adc.h"
 #include "esp_log.h"
 
-#define servo_gpio GPIO_NUM_20
+#define servo_gpio GPIO_NUM_33
 #define IR_analog ADC1_CHANNEL_6  
 
 int angle_to_DutyCycle(int thetha){

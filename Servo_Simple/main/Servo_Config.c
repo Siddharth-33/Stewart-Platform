@@ -4,7 +4,7 @@
 #include "driver/ledc.h"
 #include "esp_log.h"
 
-#define servo_gpio GPIO_NUM_20
+#define servo_gpio GPIO_NUM_4
 
 int angle_to_DutyCycle(int thetha){
     if (thetha>180) thetha= 180;

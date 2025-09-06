@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "IR_Array",
-    "project_version":    "bb4be30",
+    "project_version":    "c6e3084-dirty",
     "project_path":       "C:/Espressif/frameworks/esp-idf-v5.3.1/Stewart_Platform/IR_Array",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.3.1",
     "build_dir":          "C:/Espressif/frameworks/esp-idf-v5.3.1/Stewart_Platform/IR_Array/build",
@@ -1180,7 +1180,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "C:/Espressif/frameworks/esp-idf-v5.3.1/Stewart_Platform/IR_Array/build/esp-idf/main/libmain.a",
-            "sources": [ "C:/Espressif/frameworks/esp-idf-v5.3.1/Stewart_Platform/IR_Array/main/ir_config.c", "C:/Espressif/frameworks/esp-idf-v5.3.1/Stewart_Platform/IR_Array/main/IR_Array.c" ],
+            "sources": [ "C:/Espressif/frameworks/esp-idf-v5.3.1/Stewart_Platform/IR_Array/main/Pid_Control.c", "C:/Espressif/frameworks/esp-idf-v5.3.1/Stewart_Platform/IR_Array/main/ir_config.c", "C:/Espressif/frameworks/esp-idf-v5.3.1/Stewart_Platform/IR_Array/main/IR_Array.c" ],
             "include_dirs": [ "." ]
         },
         "mbedtls": {

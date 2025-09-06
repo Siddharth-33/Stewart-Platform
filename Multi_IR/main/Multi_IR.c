@@ -22,7 +22,7 @@ void app_main(void)
     while (1)
     {
         int Read_1= adc1_get_raw(IR_analog_1);
-        printf("Shreya 1st : %d\n" " ", Read_1);
+        printf("Shreya 1st : %d" " ", Read_1);
         if (Read_1 > 696)  
         {
             gpio_set_level(LED_GPIO, 1); 
@@ -33,7 +33,7 @@ void app_main(void)
         }
 
         int Read_2= adc1_get_raw(IR_analog_2);
-        printf("Shreya 2nd : %d\n" " ", Read_2);
+        printf("Shreya 2nd : %d" " ", Read_2);
         if (Read_2 > 696)  
         {
             gpio_set_level(LED_GPIO, 1); 
@@ -44,7 +44,7 @@ void app_main(void)
         }
 
         int Read_3= adc1_get_raw(IR_analog_3);
-        printf("Shreya 3rd : %d\n" " ", Read_3);
+        printf("Shreya 3rd : %d" " ", Read_3);
         if (Read_3 > 696)  
         {
             gpio_set_level(LED_GPIO, 1); 

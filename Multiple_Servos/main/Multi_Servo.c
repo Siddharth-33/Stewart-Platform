@@ -4,9 +4,12 @@ void app_main(void) {
     Servo_Control();
 
     while (1) {
-        for (int theta = 0; theta <= 180; theta += 10) {
-            printf("Servo angle: %d\n", theta);
-            int duty = angle_to_DutyCycle(theta);
+        // Sweep from 0° → 130°
+        for (int theta = 0; theta <= 130; theta += 10) {
+            int inverted_theta = 180 - theta;   // invert angle mapping
+            printf("Servo angle: %d (mapped to %d)\n", theta, inverted_theta);
+
+            int duty = angle_to_DutyCycle(inverted_theta);
 
             ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, duty);
             ledc_update_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0);
@@ -20,9 +23,12 @@ void app_main(void) {
             vTaskDelay(pdMS_TO_TICKS(500));
         }
 
-        for (int theta = 180; theta >= 0; theta -= 10) {
-            printf("Servo angle: %d\n", theta);
-            int duty = angle_to_DutyCycle(theta);
+        // Sweep back from 130° → 0°
+        for (int theta = 130; theta >= 0; theta -= 10) {
+            int inverted_theta = 180 - theta;   // invert angle mapping
+            printf("Servo angle: %d (mapped to %d)\n", theta, inverted_theta);
+
+            int duty = angle_to_DutyCycle(inverted_theta);
 
             ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, duty);
             ledc_update_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0);

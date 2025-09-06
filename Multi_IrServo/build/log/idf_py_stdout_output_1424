@@ -1,0 +1,926 @@
+N_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7176
+load:0x40078000,len:15564
+ho 0 tail 12 room 4
+load:0x40080400,len:4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.3.1-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Aug  3 2025 12:03:53[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a4c8h ( 42184) map[0m
+[0;32mI (119) esp_image: segment 1: paddr=0001a4f0 vaddr=3ffb0000 size=023bch (  9148) load[0m
+[0;32mI (123) esp_image: segment 2: paddr=0001c8b4 vaddr=40080000 size=03764h ( 14180) load[0m
+[0;32mI (131) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=15ccch ( 89292) map[0m
+[0;32mI (164) esp_image: segment 4: paddr=00035cf4 vaddr=40083764 size=094e8h ( 38120) load[0m
+[0;32mI (186) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (186) boot: Disabling RNG early entropy source...[0m
+[0;32mI (198) cpu_start: Multicore app[0m
+[0;32mI (206) cpu_start: Pro cpu start user code[0m
+[0;32mI (206) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (206) app_init: Application information:[0m
+[0;32mI (209) app_init: Project name:     Multi_IrServo[0m
+[0;32mI (215) app_init: App version:      c6e3084-dirty[0m
+[0;32mI (220) app_init: Compile time:     Aug  8 2025 00:05:27[0m
+[0;32mI (226) app_init: ELF file SHA256:  ee27dc0c5...[0m
+[0;32mI (231) app_init: ESP-IDF:          v5.3.1-dirty[0m
+[0;32mI (237) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (241) efuse_init: Max chip rev:     v3.99 [0m
+[0;32mI (246) efuse_init: Chip rev:         v3.1[0m
+[0;32mI (251) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2CE8 len 0002D318 (180 KiB): DRAM[0m
+[0;32mI (271) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (277) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008CC4C len 000133B4 (76 KiB): IRAM[0m
+[0;32mI (291) spi_flash: detected chip: generic[0m
+[0;32mI (294) spi_flash: flash io: dio[0m
+[0;33mW (298) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;33mW (311) ADC: legacy driver is deprecated, please migrate to `esp_adc/adc_oneshot.h`[0m
+[0;32mI (320) main_task: Started on CPU0[0m
+[0;32mI (330) main_task: Calling app_main()[0m
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 35/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 3 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 0.527859 
+ANGLE 2:- 0.000000 
+Shreya 1st : 0 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 0.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 924 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 162.580643 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1002 Shreya 2nd : 2 Shreya 3rd : 0/n  ANGLE 1:- 176.304993 
+ANGLE 2:- 179.648087 
+Shreya 1st : 996 Shreya 2nd : 1023 Shreya 3rd : 106/n  ANGLE 1:- 175.249268 
+ANGLE 2:- 0.000000 
+Shreya 1st : 10 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 1.759531 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 961 Shreya 2nd : 2 Shreya 3rd : 0/n  ANGLE 1:- 169.090912 
+ANGLE 2:- 179.648087 
+Shreya 1st : 1004 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 176.656891 
+ANGLE 2:- 179.824051 
+Shreya 1st : 949 Shreya 2nd : 1023 Shreya 3rd : 33/n  ANGLE 1:- 166.979477 
+ANGLE 2:- 0.000000 
+Shreya 1st : 951 Shreya 2nd : 2 Shreya 3rd : 0/n  ANGLE 1:- 167.331375 
+ANGLE 2:- 179.648087 
+Shreya 1st : 1023 Shreya 2nd : 3 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.472137 
+Shreya 1st : 933 Shreya 2nd : 1023 Shreya 3rd : 29/n  ANGLE 1:- 164.164230 
+ANGLE 2:- 0.000000 
+Shreya 1st : 955 Shreya 2nd : 2 Shreya 3rd : 0/n  ANGLE 1:- 168.035187 
+ANGLE 2:- 179.648087 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 956 Shreya 2nd : 1023 Shreya 3rd : 33/n  ANGLE 1:- 168.211151 
+ANGLE 2:- 0.000000 
+Shreya 1st : 983 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 172.961884 
+ANGLE 2:- 0.000000 
+Shreya 1st : 988 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 173.841644 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 3 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.472137 
+Shreya 1st : 1023 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1 Shreya 2nd : 1023 Shreya 3rd : 28/n  ANGLE 1:- 0.175953 
+ANGLE 2:- 0.000000 
+Shreya 1st : 0 Shreya 2nd : 1023 Shreya 3rd : 29/n  ANGLE 1:- 0.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 29/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 913 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 160.645157 
+ANGLE 2:- 180.000000 
+Shreya 1st : 949 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 166.979477 
+ANGLE 2:- 180.000000 
+Shreya 1st : 1023 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1013 Shreya 2nd : 1023 Shreya 3rd : 34/n  ANGLE 1:- 178.240463 
+ANGLE 2:- 0.000000 
+Shreya 1st : 940 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 165.395889 
+ANGLE 2:- 180.000000 
+Shreya 1st : 947 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 166.627563 
+ANGLE 2:- 180.000000 
+Shreya 1st : 954 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 167.859238 
+ANGLE 2:- 180.000000 
+Shreya 1st : 1023 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 180.000000 
+Shreya 1st : 955 Shreya 2nd : 1023 Shreya 3rd : 28/n  ANGLE 1:- 168.035187 
+ANGLE 2:- 0.000000 
+Shreya 1st : 951 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 167.331375 
+ANGLE 2:- 180.000000 
+Shreya 1st : 951 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 167.331375 
+ANGLE 2:- 180.000000 
+Shreya 1st : 1023 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 180.000000 
+Shreya 1st : 1023 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 180.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 28/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 180.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 982 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 172.785919 
+ANGLE 2:- 179.824051 
+Shreya 1st : 966 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 169.970673 
+ANGLE 2:- 0.000000 
+Shreya 1st : 951 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 167.331375 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 180.000000 
+Shreya 1st : 945 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 166.275665 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 180.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 0 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 0.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 3 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 0.527859 
+ANGLE 2:- 180.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 951 Shreya 2nd : 1023 Shreya 3rd : 29/n  ANGLE 1:- 167.331375 
+ANGLE 2:- 0.000000 
+Shreya 1st : 944 Shreya 2nd : 4 Shreya 3rd : 0/n  ANGLE 1:- 166.099701 
+ANGLE 2:- 179.296188 
+Shreya 1st : 988 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 173.841644 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 180.000000 
+Shreya 1st : 967 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 170.146622 
+ANGLE 2:- 179.824051 
+Shreya 1st : 945 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 166.275665 
+ANGLE 2:- 180.000000 
+Shreya 1st : 1023 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 180.000000 
+Shreya 1st : 1023 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 2 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.648087 
+Shreya 1st : 1023 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 180.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 0 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 0.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 2 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.648087 
+Shreya 1st : 948 Shreya 2nd : 1023 Shreya 3rd : 29/n  ANGLE 1:- 166.803513 
+ANGLE 2:- 0.000000 
+Shreya 1st : 992 Shreya 2nd : 3 Shreya 3rd : 0/n  ANGLE 1:- 174.545456 
+ANGLE 2:- 179.472137 
+Shreya 1st : 6 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 1.055718 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1020 Shreya 2nd : 1023 Shreya 3rd : 33/n  ANGLE 1:- 179.472137 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 948 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 166.803513 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 999 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 175.777130 
+ANGLE 2:- 0.000000 
+Shreya 1st : 953 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 167.683289 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 33/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 29/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 954 Shreya 2nd : 1023 Shreya 3rd : 33/n  ANGLE 1:- 167.859238 
+ANGLE 2:- 0.000000 
+Shreya 1st : 953 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 167.683289 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 957 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 168.387100 
+ANGLE 2:- 0.000000 
+Shreya 1st : 955 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 168.035187 
+ANGLE 2:- 0.000000 
+Shreya 1st : 988 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 173.841644 
+ANGLE 2:- 0.000000 
+Shreya 1st : 959 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 168.738998 
+ANGLE 2:- 0.000000 
+Shreya 1st : 959 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 168.738998 
+ANGLE 2:- 0.000000 
+Shreya 1st : 964 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 169.618774 
+ANGLE 2:- 0.000000 
+Shreya 1st : 944 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 166.099701 
+ANGLE 2:- 0.000000 
+Shreya 1st : 967 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 170.146622 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1000 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 175.953079 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 951 Shreya 2nd : 1023 Shreya 3rd : 34/n  ANGLE 1:- 167.331375 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 953 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 167.683289 
+ANGLE 2:- 0.000000 
+Shreya 1st : 991 Shreya 2nd : 1023 Shreya 3rd : 33/n  ANGLE 1:- 174.369507 
+ANGLE 2:- 0.000000 
+Shreya 1st : 967 Shreya 2nd : 1023 Shreya 3rd : 29/n  ANGLE 1:- 170.146622 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 29/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 974 Shreya 2nd : 1023 Shreya 3rd : 33/n  ANGLE 1:- 171.378296 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 952 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 167.507324 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 949 Shreya 2nd : 1023 Shreya 3rd : 33/n  ANGLE 1:- 166.979477 
+ANGLE 2:- 0.000000 
+Shreya 1st : 956 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 168.211151 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 34/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 3 Shreya 2nd : 1023 Shreya 3rd : 125/n  ANGLE 1:- 0.527859 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 950 Shreya 2nd : 1023 Shreya 3rd : 36/n  ANGLE 1:- 167.155426 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1017 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 178.944275 
+ANGLE 2:- 179.824051 
+Shreya 1st : 987 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 173.665695 
+ANGLE 2:- 179.824051 
+Shreya 1st : 985 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 173.313782 
+ANGLE 2:- 179.824051 
+Shreya 1st : 971 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 170.850433 
+ANGLE 2:- 179.824051 
+Shreya 1st : 981 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 172.609970 
+ANGLE 2:- 0.000000 
+Shreya 1st : 980 Shreya 2nd : 2 Shreya 3rd : 0/n  ANGLE 1:- 172.434021 
+ANGLE 2:- 179.648087 
+Shreya 1st : 972 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 171.026398 
+ANGLE 2:- 179.824051 
+Shreya 1st : 955 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 168.035187 
+ANGLE 2:- 0.000000 
+Shreya 1st : 943 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 165.923752 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 29/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 3 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 0.527859 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 983 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 172.961884 
+ANGLE 2:- 0.000000 
+Shreya 1st : 991 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 174.369507 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 948 Shreya 2nd : 1023 Shreya 3rd : 33/n  ANGLE 1:- 166.803513 
+ANGLE 2:- 0.000000 
+Shreya 1st : 959 Shreya 2nd : 1023 Shreya 3rd : 33/n  ANGLE 1:- 168.738998 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 0.175953 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 971 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 170.850433 
+ANGLE 2:- 0.000000 
+Shreya 1st : 955 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 168.035187 
+ANGLE 2:- 180.000000 
+Shreya 1st : 963 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 169.442810 
+ANGLE 2:- 179.824051 
+Shreya 1st : 983 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 172.961884 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 964 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 169.618774 
+ANGLE 2:- 180.000000 
+Shreya 1st : 972 Shreya 2nd : 3 Shreya 3rd : 0/n  ANGLE 1:- 171.026398 
+ANGLE 2:- 179.472137 
+Shreya 1st : 967 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 170.146622 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 2 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.648087 
+Shreya 1st : 965 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 169.794724 
+ANGLE 2:- 179.824051 
+Shreya 1st : 965 Shreya 2nd : 1023 Shreya 3rd : 44/n  ANGLE 1:- 169.794724 
+ANGLE 2:- 0.000000 
+Shreya 1st : 983 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 172.961884 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 2 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.648087 
+Shreya 1st : 1023 Shreya 2nd : 2 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.648087 
+Shreya 1st : 980 Shreya 2nd : 2 Shreya 3rd : 0/n  ANGLE 1:- 172.434021 
+ANGLE 2:- 179.648087 
+Shreya 1st : 1023 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 180.000000 
+Shreya 1st : 1023 Shreya 2nd : 2 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.648087 
+Shreya 1st : 1023 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 180.000000 
+Shreya 1st : 973 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 171.202347 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 180.000000 
+Shreya 1st : 970 Shreya 2nd : 2 Shreya 3rd : 0/n  ANGLE 1:- 170.674484 
+ANGLE 2:- 179.648087 
+Shreya 1st : 960 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 168.914963 
+ANGLE 2:- 0.000000 
+Shreya 1st : 968 Shreya 2nd : 1023 Shreya 3rd : 34/n  ANGLE 1:- 170.322586 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 983 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 172.961884 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 180.000000 
+Shreya 1st : 969 Shreya 2nd : 1023 Shreya 3rd : 33/n  ANGLE 1:- 170.498535 
+ANGLE 2:- 0.000000 
+Shreya 1st : 964 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 169.618774 
+ANGLE 2:- 180.000000 
+Shreya 1st : 964 Shreya 2nd : 3 Shreya 3rd : 0/n  ANGLE 1:- 169.618774 
+ANGLE 2:- 179.472137 
+Shreya 1st : 970 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 170.674484 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 180.000000 
+Shreya 1st : 969 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 170.498535 
+ANGLE 2:- 0.000000 
+Shreya 1st : 980 Shreya 2nd : 2 Shreya 3rd : 0/n  ANGLE 1:- 172.434021 
+ANGLE 2:- 179.648087 
+Shreya 1st : 1023 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 180.000000 
+Shreya 1st : 967 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 170.146622 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 966 Shreya 2nd : 4 Shreya 3rd : 0/n  ANGLE 1:- 169.970673 
+ANGLE 2:- 179.296188 
+Shreya 1st : 887 Shreya 2nd : 4 Shreya 3rd : 0/n  ANGLE 1:- 156.070389 
+ANGLE 2:- 179.296188 
+Shreya 1st : 988 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 173.841644 
+ANGLE 2:- 179.824051 
+Shreya 1st : 964 Shreya 2nd : 1023 Shreya 3rd : 33/n  ANGLE 1:- 169.618774 
+ANGLE 2:- 0.000000 
+Shreya 1st : 967 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 170.146622 
+ANGLE 2:- 0.000000 
+Shreya 1st : 963 Shreya 2nd : 1023 Shreya 3rd : 33/n  ANGLE 1:- 169.442810 
+ANGLE 2:- 0.000000 
+Shreya 1st : 966 Shreya 2nd : 2 Shreya 3rd : 0/n  ANGLE 1:- 169.970673 
+ANGLE 2:- 179.648087 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 977 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 171.906158 
+ANGLE 2:- 0.000000 
+Shreya 1st : 985 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 173.313782 
+ANGLE 2:- 0.000000 
+Shreya 1st : 964 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 169.618774 
+ANGLE 2:- 180.000000 
+Shreya 1st : 980 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 172.434021 
+ANGLE 2:- 179.824051 
+Shreya 1st : 972 Shreya 2nd : 4 Shreya 3rd : 0/n  ANGLE 1:- 171.026398 
+ANGLE 2:- 179.296188 
+Shreya 1st : 1003 Shreya 2nd : 1023 Shreya 3rd : 29/n  ANGLE 1:- 176.480942 
+ANGLE 2:- 0.000000 
+Shreya 1st : 964 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 169.618774 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 29/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 995 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 175.073318 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1005 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 176.832840 
+ANGLE 2:- 0.000000 
+Shreya 1st : 976 Shreya 2nd : 1023 Shreya 3rd : 29/n  ANGLE 1:- 171.730209 
+ANGLE 2:- 0.000000 
+Shreya 1st : 965 Shreya 2nd : 1023 Shreya 3rd : 29/n  ANGLE 1:- 169.794724 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 2 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 0.351906 
+ANGLE 2:- 0.000000 
+Shreya 1st : 4 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 0.703812 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 985 Shreya 2nd : 1023 Shreya 3rd : 29/n  ANGLE 1:- 173.313782 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 1023 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 179.824051 
+Shreya 1st : 955 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 168.035187 
+ANGLE 2:- 180.000000 
+Shreya 1st : 984 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 173.137833 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 963 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 169.442810 
+ANGLE 2:- 0.000000 
+Shreya 1st : 964 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 169.618774 
+ANGLE 2:- 179.824051 
+Shreya 1st : 38 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 6.686217 
+ANGLE 2:- 179.824051 
+Shreya 1st : 2 Shreya 2nd : 2 Shreya 3rd : 0/n  ANGLE 1:- 0.351906 
+ANGLE 2:- 179.648087 
+Shreya 1st : 12 Shreya 2nd : 1 Shreya 3rd : 0/n  ANGLE 1:- 2.111437 
+ANGLE 2:- 179.824051 
+Shreya 1st : 0 Shreya 2nd : 0 Shreya 3rd : 0/n  ANGLE 1:- 0.000000 
+ANGLE 2:- 180.000000 
+Shreya 1st : 2 Shreya 2nd : 2 Shreya 3rd : 0/n  ANGLE 1:- 0.351906 
+ANGLE 2:- 179.648087 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 85/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1005 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 176.832840 
+ANGLE 2:- 0.000000 
+Shreya 1st : 985 Shreya 2nd : 1023 Shreya 3rd : 29/n  ANGLE 1:- 173.313782 
+ANGLE 2:- 0.000000 
+Shreya 1st : 990 Shreya 2nd : 1023 Shreya 3rd : 29/n  ANGLE 1:- 174.193542 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 966 Shreya 2nd : 1023 Shreya 3rd : 29/n  ANGLE 1:- 169.970673 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 969 Shreya 2nd : 1023 Shreya 3rd : 35/n  ANGLE 1:- 170.498535 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 967 Shreya 2nd : 1023 Shreya 3rd : 34/n  ANGLE 1:- 170.146622 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1000 Shreya 2nd : 1023 Shreya 3rd : 29/n  ANGLE 1:- 175.953079 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 962 Shreya 2nd : 1023 Shreya 3rd : 29/n  ANGLE 1:- 169.266861 
+ANGLE 2:- 0.000000 
+Shreya 1st : 964 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 169.618774 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 29/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 968 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 170.322586 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 29/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 964 Shreya 2nd : 1023 Shreya 3rd : 36/n  ANGLE 1:- 169.618774 
+ANGLE 2:- 0.000000 
+Shreya 1st : 979 Shreya 2nd : 1023 Shreya 3rd : 29/n  ANGLE 1:- 172.258072 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 945 Shreya 2nd : 1023 Shreya 3rd : 29/n  ANGLE 1:- 166.275665 
+ANGLE 2:- 0.000000 
+Shreya 1st : 990 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 174.193542 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1012 Shreya 2nd : 1023 Shreya 3rd : 29/n  ANGLE 1:- 178.064514 
+ANGLE 2:- 0.000000 
+Shreya 1st : 984 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 173.137833 
+ANGLE 2:- 0.000000 
+Shreya 1st : 967 Shreya 2nd : 1023 Shreya 3rd : 33/n  ANGLE 1:- 170.146622 
+ANGLE 2:- 0.000000 
+Shreya 1st : 985 Shreya 2nd : 1023 Shreya 3rd : 30/n  ANGLE 1:- 173.313782 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 969 Shreya 2nd : 1023 Shreya 3rd : 36/n  ANGLE 1:- 170.498535 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1019 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 179.296188 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 31/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 
+Shreya 1st : 1023 Shreya 2nd : 1023 Shreya 3rd : 32/n  ANGLE 1:- 180.000000 
+ANGLE 2:- 0.000000 

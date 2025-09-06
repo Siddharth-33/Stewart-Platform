@@ -7,11 +7,11 @@
 
 
 #define IR_analog_1 ADC1_CHANNEL_4
-#define IR_analog_2 ADC1_CHANNEL_5 
+#define IR_analog_2 ADC1_CHANNEL_7
 #define IR_analog_3 ADC1_CHANNEL_6 
 
-#define SERVO_GPIO_1 GPIO_NUM_20
-#define SERVO_GPIO_2 GPIO_NUM_21
+#define SERVO_GPIO_1 GPIO_NUM_33
+#define SERVO_GPIO_2 GPIO_NUM_26
 #define SERVO_GPIO_3 GPIO_NUM_22
 
 int angle_to_DutyCycle(int theta) {

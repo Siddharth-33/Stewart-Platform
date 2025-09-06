@@ -5,9 +5,9 @@
 #include "esp_log.h"
 
 
-#define SERVO_GPIO_1 GPIO_NUM_20
-#define SERVO_GPIO_2 GPIO_NUM_21
-#define SERVO_GPIO_3 GPIO_NUM_22
+#define SERVO_GPIO_1 GPIO_NUM_18
+#define SERVO_GPIO_2 GPIO_NUM_4
+#define SERVO_GPIO_3 GPIO_NUM_19
 
 int angle_to_DutyCycle(int theta) {
     if (theta > 180) theta = 180;
