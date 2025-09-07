@@ -21,6 +21,7 @@ The control system involves inverse kinematics, which computes the required angl
 
 ### Working 
 1. The 6×6 IR sensor grid detects the position of the ball (x, y). The IR sensors act as a light curtain: when the ball blocks IR beams, the corresponding sensor is triggered. This gives a discrete grid coordinate for the ball.
+- [IR_Array](IR_Array/README.md)
 
 2. The ESP32 microcontroller receives these readings, computes the ball’s position, and calculates the error relative to the center point.
 3. A PID controller computes the required corrective tilt in 3 axes (pitch, roll, vertical translation).
