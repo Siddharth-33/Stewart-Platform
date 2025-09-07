@@ -9,11 +9,22 @@
 #define SERVO2_GPIO 4
 #define SERVO3_GPIO 19
 
+<<<<<<< HEAD:platform_circle/Platform_circle/main/Kushaan.c
 #define SERVO_MIN_PULSEWIDTH 500  // microseconds
 #define SERVO_MAX_PULSEWIDTH 2500 // microseconds
 #define SERVO_MAX_DEGREE 130
 
 // Function to convert degree to duty cycle
+=======
+#define SERVO_MIN_PULSEWIDTH 500   //ms
+#define SERVO_MAX_PULSEWIDTH 2500  /ms
+#define SERVO_MAX_DEGREE 180
+
+#define SERVO_SAFE_MIN 0
+#define SERVO_SAFE_MAX 130   //limit
+
+
+>>>>>>> 7d17a550fc9d50fb674688439a8c888e0049b5b0:platform_circle/Platform_circle/main/circle_movement.c
 uint32_t servo_per_degree_init(uint32_t degree_of_rotation)
 {
     uint32_t cal_pulsewidth = SERVO_MIN_PULSEWIDTH +
@@ -21,6 +32,17 @@ uint32_t servo_per_degree_init(uint32_t degree_of_rotation)
     return cal_pulsewidth;
 }
 
+<<<<<<< HEAD:platform_circle/Platform_circle/main/Kushaan.c
+=======
+
+uint32_t clamp_angle(int angle)
+{
+    if (angle < SERVO_SAFE_MIN) return SERVO_SAFE_MIN;
+    if (angle > SERVO_SAFE_MAX) return SERVO_SAFE_MAX;
+    return angle;
+}
+
+>>>>>>> 7d17a550fc9d50fb674688439a8c888e0049b5b0:platform_circle/Platform_circle/main/circle_movement.c
 void app_main(void)
 {
     // Timer config

@@ -23,7 +23,7 @@ void app_main(void) {
             vTaskDelay(pdMS_TO_TICKS(500));
         }
 
-        // Sweep back from 130° → 0°
+        //Sweep back
         for (int theta = 130; theta >= 0; theta -= 10) {
             int inverted_theta = 180 - theta;   // invert angle mapping
             printf("Servo angle: %d (mapped to %d)\n", theta, inverted_theta);
