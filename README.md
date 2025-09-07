@@ -14,11 +14,11 @@ The control system involves inverse kinematics, which computes the required angl
 4. Assembly: Integration of IR sensors, servos, and platform joints.
 5. PCB Design
 
-##  Features
-
-
-
 ##  Demo / Visualization
+
+
+https://github.com/user-attachments/assets/7702f138-aebe-432d-a38e-a0595fac239a
+
 
 ### Working //still incomplete- have to edit
 1. The 6×6 IR sensor grid detects the position of the ball (x, y). The IR sensors act as a light curtain: when the ball blocks IR beams, the corresponding sensor is triggered. This gives a discrete grid coordinate for the ball.
