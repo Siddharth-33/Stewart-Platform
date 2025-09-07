@@ -9,14 +9,14 @@
 #define SERVO2_GPIO 4
 #define SERVO3_GPIO 19
 
-#define SERVO_MIN_PULSEWIDTH 500   // microseconds
-#define SERVO_MAX_PULSEWIDTH 2500  // microseconds
+#define SERVO_MIN_PULSEWIDTH 500   //ms
+#define SERVO_MAX_PULSEWIDTH 2500  /ms
 #define SERVO_MAX_DEGREE 180
 
 #define SERVO_SAFE_MIN 0
-#define SERVO_SAFE_MAX 130   // your servo’s safe limit
+#define SERVO_SAFE_MAX 130   //limit
 
-// Convert angle (0–180) to PWM pulse width
+
 uint32_t servo_per_degree_init(uint32_t degree_of_rotation)
 {
     uint32_t cal_pulsewidth = SERVO_MIN_PULSEWIDTH +
@@ -24,7 +24,7 @@ uint32_t servo_per_degree_init(uint32_t degree_of_rotation)
     return cal_pulsewidth;
 }
 
-// Clamp function to stay in safe range
+
 uint32_t clamp_angle(int angle)
 {
     if (angle < SERVO_SAFE_MIN) return SERVO_SAFE_MIN;
