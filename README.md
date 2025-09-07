@@ -58,7 +58,7 @@ The control system:
 ## PCB Design
 - PCB designed using **KiCad**  
 - Includes IR sensor interfacing, shift register chain, and servo connectors  
-- [Schematic
+- [PCB_design](PCB_design/PCB_WORK)
 
 ---
 
