@@ -3,6 +3,10 @@
 ## A 6×6 IR sensor grid is mounted on the top plate to detect the real-time position of the ball in the x–y plane. 
 <img width="672" height="896" alt="image" src="https://github.com/user-attachments/assets/70c87d75-65ab-438e-ba99-7b8d3bfe11d3" />
 
+### Demonstration of working with 3x3 IR grid
+
+https://github.com/user-attachments/assets/40a13236-8f8c-4e64-a0d5-59ff79ba54aa
+
 
 ## Working
 
