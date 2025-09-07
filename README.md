@@ -1,9 +1,5 @@
 # 3-DOF Stewart Platform
 
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/c730d66b-91c2-4fda-a544-a6db36ccea93" />
-
----
-
 ## Demo
 https://github.com/user-attachments/assets/998ffcb7-0a2c-45e5-982b-bb6aab626a49
 
