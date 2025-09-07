@@ -12,18 +12,17 @@ It is used for a **ball-balancing control system**, where a ball placed on the p
 The control system:
 - Detects the ball’s real-time position using IR sensors  
 - Computes error relative to the center point (0,0)  
-- Uses a **PID control loop** to minimize error  
-- Applies **inverse kinematics** to compute servo angles  
-- Sends PWM signals to **six servo motors (MG996R)** to tilt/lift the platform  
+- Uses a **PID control loop** to minimize error 
+- Sends PWM signals to **3 servo motors (MG996R)** to tilt the platform  
 
 ---
 
 ## Domains
 1. **Mechanical Design**: CAD modeling of platform base, top plate, and servo linkages  
 2. **Embedded Systems**: ESP32 for IR sensor interfacing and servo control  
-3. **Control Theory**: PID tuning, inverse kinematics for 3-DOF motion  
+3. **Control Systems**: PID tuning for 3-DOF motion  
 4. **Assembly**: Integration of IR sensors, servos, and mechanical joints  
-5. **PCB Design**: Custom PCB designed in KiCad  
+5. **PCB Design**: Custom PCB design in KiCad  
 
 ---
 
@@ -45,20 +44,19 @@ The control system:
    - This position is compared to the target center point (0,0).  
 
 4. **Control System**  
-   - A **PID controller** computes the corrective tilt required in pitch, roll, and vertical translation.  
-   - **Inverse kinematics** maps these corrections to six servo motor angles.  
+   - **PID tuning** to control the platform movement.
 
 5. **Actuation**  
-   - ESP32 generates **PWM signals** for six MG996R servos.  
+   - ESP32 generates **PWM signals** for 3 MG996R servos.  
    - Each pair of servos works in opposition to tilt or lift the platform.  
    - The ball moves accordingly, and the control loop repeats.  
 
 ---
 
 ## PCB Design
-- PCB designed using **KiCad**  
-- Includes IR sensor interfacing, shift register chain, and servo connectors  
-- [PCB_design](PCB_design/PCB_WORK)
+- PCB design is in progress using **KiCad**  
+- Includes IR sensor interfacing, shift register chain, and LM358 IC.
+- [PCB Design schematic](PCB_design/PCB_WORK)
 
 ---
 
