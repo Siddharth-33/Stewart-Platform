@@ -1,5 +1,9 @@
 # 3-DOF Stewart Platform
 
+##  Demo / Visualization
+
+https://github.com/user-attachments/assets/998ffcb7-0a2c-45e5-982b-bb6aab626a49
+
 ##  Overview
 ** Aims to design and implement a functional 3-DOF Stewart Platform, a parallel manipulator capable of motion in pitch, roll, and vertical heave. The platform will be used for real-time ball-balancing control, where a ball placed on the top surface is continuously stabilized at the center using a 6x6 grid of IR Sensors connected to serial registers for each row.
 
@@ -13,12 +17,6 @@ The control system involves inverse kinematics, which computes the required angl
 3. Control Theory: PID tuning, inverse kinematics for 3-DOF.
 4. Assembly: Integration of IR sensors, servos, and platform joints.
 5. PCB Design
-
-##  Demo / Visualization
-
-
-https://github.com/user-attachments/assets/998ffcb7-0a2c-45e5-982b-bb6aab626a49
-
 
 
 ### Working 
