@@ -17,27 +17,18 @@ The control system involves inverse kinematics, which computes the required angl
 ##  Demo / Visualization
 
 
-https://github.com/user-attachments/assets/7702f138-aebe-432d-a38e-a0595fac239a
+https://github.com/user-attachments/assets/998ffcb7-0a2c-45e5-982b-bb6aab626a49
 
 
-### Working //still incomplete- have to edit
+
+### Working 
 1. The 6×6 IR sensor grid detects the position of the ball (x, y). The IR sensors act as a light curtain: when the ball blocks IR beams, the corresponding sensor is triggered. This gives a discrete grid coordinate for the ball.
 
-The ESP32 microcontroller receives these readings, computes the ball’s position, and calculates the error relative to the center point.
-
-A PID controller computes the required corrective tilt in 3 axes (pitch, roll, vertical translation).
-
-Using inverse kinematics, the corrective tilt is mapped to servo rotation angles. For 3-DOF, pairs of servos are assigned to each motion direction:
-
-Direction 1 (Pitch): Servos 0 & 5
-
-Direction 2 (Roll): Servos 3 & 4
-
-Direction 3 (Heave / vertical adjustment): Servos 1 & 2
-
-The ESP32 outputs PWM signals to the six servo motors (MG996R). Each pair moves in opposite directions to tilt or lift the platform smoothly.
-
-The ball moves on the tilted surface, its new position is sensed by the IR grid, and the control loop repeats, stabilizing the ball at the center.
+2. The ESP32 microcontroller receives these readings, computes the ball’s position, and calculates the error relative to the center point.
+3. A PID controller computes the required corrective tilt in 3 axes (pitch, roll, vertical translation).
+4. Using inverse kinematics, the corrective tilt is mapped to servo rotation angles. For 3-DOF, pairs of servos are assigned to each motion direction.
+5. The ESP32 outputs PWM signals to the six servo motors (MG996R). Each pair moves in opposite directions to tilt or lift the platform smoothly.
+6. The ball moves on the tilted surface, its new position is sensed by the IR grid, and the control loop repeats, stabilizing the ball at the center.
 
 
 ### PCB Design
