@@ -31,7 +31,8 @@ The control system:
 
 1. **Ball Detection**  
    - A **6×6 IR sensor grid** detects the ball’s position (x, y).  
-   - IR sensors act as a light curtain: when the ball blocks a beam, the sensor triggers, giving a discrete grid coordinate.  
+   - IR sensors act as a light curtain: when the ball blocks a beam, the sensor triggers, giving a discrete grid coordinate.
+   - [IR Grid README](IR_Array/README.md)  
 
 2. **Signal Processing**  
    - Sensor outputs pass through an **Op-Amp comparator circuit**.  
@@ -42,7 +43,6 @@ The control system:
 3. **Ball Positioning**  
    - ESP32 decodes sensor readings to compute the ball’s current (x, y) position.  
    - This position is compared to the target center point (0,0).  
-   - [IR Grid README](IR_Array/README.md)  
 
 4. **Control System**  
    - A **PID controller** computes the corrective tilt required in pitch, roll, and vertical translation.  
@@ -62,8 +62,26 @@ The control system:
 
 ---
 
-## 🚀 Installation
+## Structure
+- [CAD_design](CAD_design)  
+- [IR_Analog](IR_Analog)  
+- [IR_Array](IR_Array)  
+- [IR_Read](IR_Read)  
+- [IR_Servo](IR_Servo)  
+- [Multi_IR](Multi_IR)  
+- [Multi_IrServo](Multi_IrServo)  
+- [Multiple_Servos](Multiple_Servos)  
+- [new_servo](new_servo)  
+- [PCB_design](PCB_design)  
+- [platform_circle](platform_circle)  
+- [README.md](README.md)  
+- [Servos_final](Servos_final)  
+- [Servo_Simple](Servo_Simple)  
+- [SPI_TRY](SPI_TRY)  
+
+## Installation
 
 ```bash
 git clone https://github.com/Siddharth-33/Stewart-Platform.git
 cd Stewart-Platform
+
