@@ -8,6 +8,11 @@ This reduces GPIO usage on the ESP32 while allowing multiple digital inputs to b
 
 ---
 
+## Demonstration
+
+https://github.com/user-attachments/assets/283f2df7-b4b4-4fb8-b4f1-d4f5bfe44b0a
+
+
 ## Hardware Setup
 
 - **ESP32 
