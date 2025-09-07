@@ -21,13 +21,19 @@ The control system involves inverse kinematics, which computes the required angl
 
 ### Working 
 1. The 6×6 IR sensor grid detects the position of the ball (x, y). The IR sensors act as a light curtain: when the ball blocks IR beams, the corresponding sensor is triggered. This gives a discrete grid coordinate for the ball.
-- [IR_Array](IR_Array/README.md)
 
 2. The ESP32 microcontroller receives these readings, computes the ball’s position, and calculates the error relative to the center point.
-3. A PID controller computes the required corrective tilt in 3 axes (pitch, roll, vertical translation).
-4. Using inverse kinematics, the corrective tilt is mapped to servo rotation angles. For 3-DOF, pairs of servos are assigned to each motion direction.
-5. The ESP32 outputs PWM signals to the six servo motors (MG996R). Each pair moves in opposite directions to tilt or lift the platform smoothly.
-6. The ball moves on the tilted surface, its new position is sensed by the IR grid, and the control loop repeats, stabilizing the ball at the center.
+
+   README: - [IR_Array](IR_Array/README.md)
+   
+4. A PID controller computes the required corrective tilt in 3 axes (pitch, roll, vertical translation).
+5. Using inverse kinematics, the corrective tilt is mapped to servo rotation angles. For 3-DOF, pairs of servos are assigned to each motion direction.
+   
+7. The ESP32 outputs PWM signals to the six servo motors (MG996R). Each pair moves in opposite directions to tilt or lift the platform smoothly.
+   
+   README: 
+   
+9. The ball moves on the tilted surface, its new position is sensed by the IR grid, and the control loop repeats, stabilizing the ball at the center.
 
 
 ### PCB Design
