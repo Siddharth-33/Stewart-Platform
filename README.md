@@ -1,49 +1,73 @@
 # 3-DOF Stewart Platform
 
-##  Demo / Visualization
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/c730d66b-91c2-4fda-a544-a6db36ccea93" />
 
+---
+
+## Demo
 https://github.com/user-attachments/assets/998ffcb7-0a2c-45e5-982b-bb6aab626a49
 
-##  Overview
-** Aims to design and implement a functional 3-DOF Stewart Platform, a parallel manipulator capable of motion in pitch, roll, and vertical heave. The platform will be used for real-time ball-balancing control, where a ball placed on the top surface is continuously stabilized at the center using a 6x6 grid of IR Sensors connected to serial registers for each row.
+---
 
-A 6×6 IR sensor grid is mounted on the top plate to detect the real-time position of the ball in the x–y plane. The measured ball coordinates are continuously compared to the desired center point (0,0). A PID control loop minimizes the error by adjusting the platform’s tilt through coordinated servo movements.
+## Overview
+This project aims to design and implement a **3-DOF Stewart Platform** — a parallel manipulator capable of motion in **pitch**, **roll**, and **vertical heave**.  
+It is used for a **ball-balancing control system**, where a ball placed on the platform is continuously stabilized at the center using a **6×6 IR sensor grid** connected via shift registers.
 
-The control system involves inverse kinematics, which computes the required angles for each pair of servo-driven linkages. These angles are then translated into servo PWM signals, tilting the platform to guide the ball back toward the center.
+The control system:
+- Detects the ball’s real-time position using IR sensors  
+- Computes error relative to the center point (0,0)  
+- Uses a **PID control loop** to minimize error  
+- Applies **inverse kinematics** to compute servo angles  
+- Sends PWM signals to **six servo motors (MG996R)** to tilt/lift the platform  
+
+---
 
 ## Domains
-1. Mechanical Design: CAD modeling of the platform base, top plate, and servo linkages.
-2. Embedded Systems: Using ESP32 microcontroller for IR sensor reading and servo control.
-3. Control Theory: PID tuning, inverse kinematics for 3-DOF.
-4. Assembly: Integration of IR sensors, servos, and platform joints.
-5. PCB Design
+1. **Mechanical Design**: CAD modeling of platform base, top plate, and servo linkages  
+2. **Embedded Systems**: ESP32 for IR sensor interfacing and servo control  
+3. **Control Theory**: PID tuning, inverse kinematics for 3-DOF motion  
+4. **Assembly**: Integration of IR sensors, servos, and mechanical joints  
+5. **PCB Design**: Custom PCB designed in KiCad  
 
+---
 
-### Working 
-1. The 6×6 IR sensor grid detects the position of the ball (x, y). The IR sensors act as a light curtain: when the ball blocks IR beams, the corresponding sensor is triggered. This gives a discrete grid coordinate for the ball.
+## Working Principle
 
-2. The ESP32 microcontroller receives these readings, computes the ball’s position, and calculates the error relative to the center point.
+1. **Ball Detection**  
+   - A **6×6 IR sensor grid** detects the ball’s position (x, y).  
+   - IR sensors act as a light curtain: when the ball blocks a beam, the sensor triggers, giving a discrete grid coordinate.  
 
-   README: - [IR_Array](IR_Array/README.md)
-   
-4. A PID controller computes the required corrective tilt in 3 axes (pitch, roll, vertical translation).
-5. Using inverse kinematics, the corrective tilt is mapped to servo rotation angles. For 3-DOF, pairs of servos are assigned to each motion direction.
-   
-7. The ESP32 outputs PWM signals to the six servo motors (MG996R). Each pair moves in opposite directions to tilt or lift the platform smoothly.
-   
-   README: 
-   
-9. The ball moves on the tilted surface, its new position is sensed by the IR grid, and the control loop repeats, stabilizing the ball at the center.
+2. **Signal Processing**  
+   - Sensor outputs pass through an **Op-Amp comparator circuit**.  
+   - Signals are fed into **74HC165 shift registers**, reducing GPIO usage.  
+   - Shift register outputs are read by the **ESP32** via SPI.  
+   - [Shift Register README](SPI_TRY/README.md)  
 
+3. **Ball Positioning**  
+   - ESP32 decodes sensor readings to compute the ball’s current (x, y) position.  
+   - This position is compared to the target center point (0,0).  
+   - [IR Grid README](IR_Array/README.md)  
 
-### PCB Design
-The PCB has been designed on KiCad. Schematic:
+4. **Control System**  
+   - A **PID controller** computes the corrective tilt required in pitch, roll, and vertical translation.  
+   - **Inverse kinematics** maps these corrections to six servo motor angles.  
 
+5. **Actuation**  
+   - ESP32 generates **PWM signals** for six MG996R servos.  
+   - Each pair of servos works in opposition to tilt or lift the platform.  
+   - The ball moves accordingly, and the control loop repeats.  
 
+---
 
-## Installation
-1. Clone the repository:
-   
-   git clone https://github.com/Siddharth-33/Stewart-Platform.git
-   
-   cd Stewart-Platform
+## PCB Design
+- PCB designed using **KiCad**  
+- Includes IR sensor interfacing, shift register chain, and servo connectors  
+- [Schematic
+
+---
+
+## 🚀 Installation
+
+```bash
+git clone https://github.com/Siddharth-33/Stewart-Platform.git
+cd Stewart-Platform
